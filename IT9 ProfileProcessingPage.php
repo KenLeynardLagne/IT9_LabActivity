@@ -9,7 +9,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $hobbies = isset($_POST['hobbies']) ? $_POST['hobbies'] : [];
     $bio = htmlspecialchars($_POST['bio']);
 
-
     $target_dir = "uploads/";
 
     if (!file_exists($target_dir)) { mkdir($target_dir, 0777, true); }
